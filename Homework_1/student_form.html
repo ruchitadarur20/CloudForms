@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Advanced Student Survey Form</title>
+        <style>
+            body 
+            {
+                background: linear-gradient(#6a11cb, #2575fc);
+                margin:0;
+                padding:20px;
+                color:#ffffff;
+            }
+            .container 
+            {
+                max-wight: 700px;
+                margin:50px auto;
+                background: #fff;
+                padding:30px;
+                box-shadding:0 4px 12px rgba(0,0,0,0.2);
+            }
+            h1 
+            {
+                text-align:center;
+                color:#f8f4f4;
+            }
+            .form-group
+            {
+                margin-bottom: 30px;
+            }
+            label
+            {
+                display:block;
+                margin-bottom:8px;
+                font-weight:bold;
+                text-align: left;
+            }
+            input,select, textarea 
+            {
+                width: 100%;
+                padding: 12px;
+                border-radius:8px;
+                font-size:16px;
+            }
+            input,select,textarea 
+            {
+                width: 90%;
+                padding: 12px;
+                margin-top:5px;
+                border: 1px solid #ddd;
+                border-radius:8px;
+                font-size:16px;
+            }
+
+            input:focus, select:focus, textarea:focus 
+            {
+                border-color: #6a11cb;
+                box-shadow: 0 0 8px rgba(106,17,203,0.5)
+            }
+            input[type='radio'], input[type="checkbox"]
+            {
+                width: auto;
+                margin-right: 10px;
+            }
+            .form-group.inline 
+            {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+            .form-group.inline label 
+            {
+                margin-right: 20px;
+            }
+            .glass-container 
+            {
+                width: 80%;
+                margin: 50px auto;
+                padding: 20px;
+                background: rgba(255, 255, 255, 0.2); /* Transparent white */
+                border-radius: 15px; /* Rounded corners */
+                backdrop-filter: blur(10px); /* Frosted glass effect */
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+                border: 1px solid rgba(255, 255, 255, 0.3); /* Border for contrast */
+                color: #fff; /* Text color */
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="container"> -->
+            <div class="glass-container">
+            <h1> STUDENT SURVEY FORM</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="firstName">FIRST NAME:</label>
+                    <input type="text" id="firstName" pattern="[A-Za-z]+" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">LAST NAME:</label>
+                    <input type="text" id="lastName" pattern="[A-Za-z]+" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="streetAddress">STREET ADDRESS:</label>
+                    <input type="text" id="streetAddress" name="streetAddress"pattern="[A-Za-z0-9\s,.#-]+" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">CITY:</label>
+                    <input type="text" id="city" name="city" pattern="[A-Za-z\s]+" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">STATE:</label>
+                    <input type="text" id="state" name="state" pattern="[A-Za-z\s]+" required>
+                </div>
+                <div class="form-group">
+                    <label for="zip">ZIP:</label>
+                    <input type="text" id="zip" name="zip" pattern="^\d{5}(-\d{4})?$" placeholder="Enter 5-digit (e.g., 12345 )" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">TELEPHONE NUMBER:</label>
+                    <input type="tel" id="telephone" name="telephone" pattern="^\d{10}$" placeholder="Enter 10-digit phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="raffleNumbers" name="raffleNumbers"pattern="^([1-9][0-9]?(, ?[1-9][0-9]?){9,})$" placeholder="e.g., 5,12,23,34,45,56,67,78,89,90" required>
+                </div>
+                <div class="form-group">
+                    <label for="surveyDate">DATE OF SURVEY:</label>
+                    <input type="date" id="surveyDate" name="surveyDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="select">WHAT DID YOU LIKE MOST ABOUT THE CAMPUS? (SELECT ALL THAT APPLY):</label>
+                    <label><input type="checkbox" name="campus" value="Students"> Students</label>
+                    <label><input type="checkbox" name="campus" value="Location"> Location</label>
+                    <label><input type="checkbox" name="campus" value="Campus"> Campus</label>
+                    <label><input type="checkbox" name="campus" value="Atmosphere"> Atmosphere</label>
+                    <label><input type="checkbox" name="campus" value="Dorm Rooms"> Dorm Rooms</label>
+                    <label><input type="checkbox" name="campus" value="Sports"> Sports</label>
+                </div>
+                <div class="form-group">
+                    <label for="select">HOW DID YOU HEAR ABOUT THE UNIVERSITY?</label>
+                    <label><input type="radio" name="interest" value="Friends" required> Friends</label>
+                    <label><input type="radio" name="interest" value="Television"> Television</label>
+                    <label><input type="radio" name="interest" value="Internet"> Internet</label>
+                    <label><input type="radio" name="interest" value="Other"> Other</label>
+                </div>
+                <div class="form-group">
+                    <label for="recommendation">HOW LIKELY ARE YOU RECOMMEND THIS UNIVERSITY?</label>
+                    <select id="recommendation" name="recommendation" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Very Likely">Very Likely</option>
+                        <option value="Likely">Likely</option>
+                        <option value="Unlikely">Unlikely</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label for="raffleNumbers">RAFFLE NUMBER (ENTER AT LEAST 10 COMMA-SEPARATED NUMBER BETWEEN 1 AND 100):</label>
+                    <input type="text" id="raffleNumbers" name="raffleNumbers" placeholder="e.g., 5,12,23,34,45,56,67,78,89,90" required>
+                </div>
+                <div class="form-group">
+                    <label for="comments">ADDITIONAL COMMENTS:</label>
+                    <textarea id="comments" name="comments" rows="5" placeholder="Your feedback here..."></textarea>
+                </div>
+                <div class="btn-group">
+                    <button type="submit">SUBMIT</button>
+                    <button type="reset">CANCEL</button>
+                </div>
+            </form>
+            <section class="banner">
+                <div class="cta">
+                    <a href="http://assignmentparta.s3-website.us-east-2.amazonaws.com">
+                        <button>AWS</button>
+                    </a>
+                </div>
+            </section>
+    </body>
+</html>        

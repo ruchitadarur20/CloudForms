@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern and sleek website for 2025">
+    <title>Welcome to 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #0072ff, #00c6ff);
+            color: #fff;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00c6ff;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+        .cta {
+            margin-top: 20px;
+        }
+        .cta a {
+            text-decoration: none;
+            color: #0072ff;
+            background-color: #fff;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .cta a:hover {
+            background-color: #e6e6e6;
+            transform: scale(1.1);
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feature 
+        {
+            background: #2d9cdb;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            flex: 1 1 calc(33.33% - 20px);
+        }
+
+        .feature:nth-child(4) {
+            grid-column: 1; 
+        }
+
+        .feature h3 
+        {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .banner 
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background: linear-gradient(to right, #C9ADA7, #F2E9E4); 
+            color: #333;
+
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        
+        .banner img 
+        {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .banner .content 
+        {
+            max-width: 600px;
+            text-align: left;
+        }
+        .banner h1 
+        {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .banner p 
+        {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        footer 
+        {
+            background: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        footer p 
+        {
+            font-size: 0.9rem;
+        }
+        .cta a {
+        text-decoration: none;
+        color: #0072ff;
+        background: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: color 0.3s;
+        }
+        .cta a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      
+        <div class="hero">
+            <h1>WELCOME TO <br> GEORGE MASON UNIVERSITY </h1>
+        </div>
+    </header>
+
+    <section class="banner">
+        <img src="https://storage.googleapis.com/collegetuitioncompare/images/colleges/232186-george-mason-university.jpg" alt="George Mason University">
+        <div class="content">
+            <h1>COMPUTER SCIENCE</h1>
+            <p>Driving innovation through AI, cybersecurity, data science, and software engineering. Explore cutting-edge research, hands-on learning, and real-world applications to shape the future of technology.</p>
+        </div>
+    </section>
+<section class = "banner">
+    <div class ="title">
+        <h2> AWS</h2>
+    </div>
+</section>
+    <section id="features" class="features">
+        <div class="feature">
+            <h3>Scalable Infrastructure</h3>
+            <p>Leverage AWS's robust cloud solutions to scale your applications effortlessly.</p>
+        </div>
+        <div class="feature">
+            <h3>Unmatched Performance</h3>
+            <p>Experience high-speed computing and seamless cloud operations with AWS.</p>
+        </div>
+        <div class="feature">
+            <h3>Global Reach</h3>
+            <p>Deploy applications across AWS’s worldwide data centers for maximum availability.</p>
+        </div>
+        <div class="feature">
+            <h3>Security First</h3>
+            <p>Benefit from AWS’s enterprise-grade security, ensuring your data is protected at all times.</p>
+        </div>
+        <div class="feature">
+            <h3>AI & Machine Learning</h3>
+            <p>Harness the power of AWS AI/ML services to drive innovation and efficiency..</p>
+        </div>
+        <div class="feature">
+            <h3>Cost-Effective Solutions</h3>
+            <p>Optimize your cloud spending with AWS’s flexible pricing and cost management tools..</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025. Designed By Ruchita Darur</p>
+    </footer>
+    <section class="banner">
+        <div class="cta">
+            <a href="http://3.145.199.187/student_form.html">
+                <button>FILL OUT STUDENT SURVEY FORM</button>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
