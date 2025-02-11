@@ -1,7 +1,4 @@
 Author: RUCHITA DARUR <br>
-Date: 2/7/2025 <br>
-Course: SWE 645 <br>
-Assignment: Assignment 1 <br>
 
 Part-A<br><b>Deployment Links:-</b> <br>assignmentparta (S3):- http://assissment1.s3-website-us-east-1.amazonaws.com/
 
